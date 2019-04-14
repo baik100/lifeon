@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+@function pxToRem($val){
+    $calcVal: $val / 16;
+    @return $calcVal * 1rem;
+}
+
+html {
+    font-size: 4.44444vw;
+}
+
+body {
+    font-family: 'Noto Sans KR', 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#wrap {
+    padding-top: pxToRem(56);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    .page-container {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        .page-main {
+            position: relative;
+            flex-grow: 1;
+            .onSearch & {
+                display: none;
+            }
+        }
+    }
+}
+
+.form-control {
+    border: 0;
+    display: inline-block;
+    padding: pxToRem(6);
+    background: transparent;
+    &:focus {
+        outline: 0;
+    }
+}
+
+.input-checkbox {
+    input {
+        display: none;
+        &:checked {
+            + label {
+                .icon-checkbox {
+                    background-image: url(../images/icCheckboxS.png);
+                }
+            }
+        }
+    }
+    label {
+        display: flex;
+        align-items: center;
+        font-size: pxToRem(16);
+        .icon-checkbox {
+            width: pxToRem(16);
+            height: pxToRem(16);
+            background: url(../images/icCheckboxD.png) 50% / contain no-repeat;
+            margin-right: pxToRem(8);
+        }
+    }
+}
+
+.masonry-grid {
+    .masonry-grid-item {
+        position: relative;
+        width: 50%;
+        padding: pxToRem(8);
+        float: left;
+    }
+}
+
+.page-container {
+    .onSearch & {
+        display: none;
+    }
+}
+
+.search-result {
+    display: none;
+    .enterWord & {
+        display: block;
+    }
+
+    .products {
+        .product-item {
+            position: relative;
+            display: block;
+            cursor: pointer;
+            .desc {
+                position: absolute;
+                left: pxToRem(8);
+                bottom: pxToRem(14);
+
+                h3 {
+                    font-size: pxToRem(20);
+                    font-weight: bold;
+                    color: #fff;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
+
+.btn {
+    border: 0;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:focus {
+        outline: 0;
+    }
+}
