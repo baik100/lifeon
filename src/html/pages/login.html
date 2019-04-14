@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<include src="../components/head.html"></include>
+<body>
+<div id="wrap">
+    <div class="lon-login-section">
+        <form class="lon-login-group">
+            <div class="lon-logo">
+                <a href="#!">
+                    <img src="../../images/logoAwallWSmall@2x.png" alt="">
+                </a>
+            </div>
+            <div class="lon-login">
+                <input type="email" class="login-email form-control" placeholder="email">
+                <input type="password" class="login-pw form-control" placeholder="pw">
+            </div>
+            <div class="lon-btn-area">
+                <button type="submit" class="btn btn-login">Login</button>
+            </div>
+
+            <div class="auto-login">
+                <div class="input-checkbox">
+                    <input type="checkbox" class="icon-checkbox" id="auto_login">
+                    <label for="auto_login">
+                        자동 로그인
+                    </label>
+                </div>
+            </div>
+        </form>
+
+        <div class="lon-login-info">
+            <p>ID/ PW 분실 시 :</p>
+            <p><strong>본사</strong> (email : info@awall.com / tel : 010-1234-5679)</p>
+        </div>
+    </div>
+</div>
+<script>
+
+    $('.btn-login').on('click',function (e) {
+        e.preventDefault();
+        window.location.href="./home.html";
+    })
+
+</script>
+</body>
+</html>

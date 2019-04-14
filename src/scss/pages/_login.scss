@@ -1,0 +1,88 @@
+//login
+
+.lon-login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    .lon-logo {
+        text-align: center;
+        margin-bottom: pxToRem(33);
+        img {
+            width: pxToRem(120);
+        }
+    }
+    .lon-login {
+        margin: 0 auto pxToRem(20);
+        width: pxToRem(288);
+        height: pxToRem(100);
+        background: #E6E6E6;
+        -webkit-border-radius: pxToRem(4);
+        -moz-border-radius: pxToRem(4);
+        border-radius: pxToRem(4);
+        position: relative;
+        .login-email {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: pxToRem(288);
+            height: pxToRem(50);
+            padding: 0 pxToRem(16);
+            line-height: pxToRem(50);
+            border-bottom: 1px solid rgb(200, 199, 204);
+        }
+        .login-pw {
+            position: absolute;
+            top: pxToRem(50);
+            left: 0;
+            width: pxToRem(288);
+            height: pxToRem(50);
+            padding: 0 pxToRem(16);
+            line-height: pxToRem(50);
+        }
+    }
+    .lon-btn-area {
+        .btn-login {
+            margin: 0 auto pxToRem(26);
+            width: pxToRem(288);
+            height: pxToRem(50);
+            line-height: pxToRem(50);
+            background: rgb(51, 51, 51);
+            -webkit-border-radius: pxToRem(4);
+            -moz-border-radius: pxToRem(4);
+            border-radius: pxToRem(4);
+            font-size: pxToRem(17);
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+    .auto-login {
+        .icon-checkbox {
+            display: none;
+            + label {
+                display: flex;
+                align-items: center;
+                padding-left: pxToRem(25);
+                background: url('../images/icCheckboxD.png') 0 50% / 1rem auto no-repeat;
+            }
+
+            &:checked {
+                + label {
+                    background-image: url('../images/icCheckboxS.png');
+                }
+            }
+        }
+    }
+    .lon-login-info {
+        margin-top: pxToRem(100);
+        text-align: center;
+        font-size: pxToRem(12);
+        color: rgb(180, 180, 180);
+        strong {
+            font-weight: bold;
+        }
+    }
+}

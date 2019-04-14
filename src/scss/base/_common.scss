@@ -49,30 +49,6 @@ html, body {
     }
 }
 
-.input-checkbox {
-    input {
-        display: none;
-        &:checked {
-            + label {
-                .icon-checkbox {
-                    background-image: url(../images/icCheckboxS.png);
-                }
-            }
-        }
-    }
-    label {
-        display: flex;
-        align-items: center;
-        font-size: pxToRem(16);
-        .icon-checkbox {
-            width: pxToRem(16);
-            height: pxToRem(16);
-            background: url(../images/icCheckboxD.png) 50% / contain no-repeat;
-            margin-right: pxToRem(8);
-        }
-    }
-}
-
 .masonry-grid {
     .masonry-grid-item {
         position: relative;

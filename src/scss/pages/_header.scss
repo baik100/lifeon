@@ -1,0 +1,85 @@
+//header
+.lon-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: pxToRem(66);
+    background: #fff;
+    display: flex;
+    z-index: 1500;
+    align-items: center;
+    justify-content: center;
+    .onSearch & {
+        -webkit-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+        box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+    }
+    .lon-btn-nav {
+        padding: 0 pxToRem(16);
+        img {
+            width: pxToRem(24);
+            height: pxToRem(24);
+            cursor: pointer;
+        }
+        .onSearch & {
+            display: none;
+        }
+    }
+    .lon-search-area {
+        flex-grow: 1;
+        .search-group {
+            position: relative;
+            height: pxToRem(32);
+            display: flex;
+            .search-box {
+                flex-grow: 1;
+                height: pxToRem(32);
+                padding: pxToRem(6) pxToRem(30) pxToRem(4);
+                font-size: pxToRem(14);
+                background: rgb(230, 230, 230);
+                -webkit-border-radius: pxToRem(4);
+                -moz-border-radius: pxToRem(4);
+                border-radius: pxToRem(4);
+                .onSearch & {
+                    flex-grow: 1;
+                    background: rgb(248, 248, 248);
+                    padding: pxToRem(6) pxToRem(12) pxToRem(4);
+                    margin-left: pxToRem(16);
+                }
+            }
+            .btn-search {
+                position: absolute;
+                top: pxToRem(9);
+                left: pxToRem(8);
+                width: pxToRem(14);
+                height: pxToRem(14);
+                z-index: 1;
+                cursor: pointer;
+                background: url('../images/searchGlyphOnLight@2x.png')50%/cover no-repeat;
+                .onSearch & {
+                    display: none;
+                }
+            }
+            .btn-reset {
+                display: none;
+                .onSearch & {
+                    display: block;
+                    font-size: pxToRem(14);
+                    padding: 0 pxToRem(16);
+                }
+            }
+        }
+    }
+    .lon-filter {
+        padding: pxToRem(16) pxToRem(16);
+        .onSearch & {
+            display: none;
+        }
+        img {
+            width: pxToRem(24);
+            height: pxToRem(24);
+            cursor: pointer;
+        }
+    }
+}

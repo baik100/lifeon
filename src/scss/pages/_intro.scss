@@ -1,0 +1,43 @@
+.lon-intro {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    animation: showAndHide 3s ease-out both;
+    animation-delay: 0.5s;
+    h1 {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: pxToRem(128);
+        }
+    }
+    p {
+        font-size: pxToRem(12);
+        color: $brownGrey;
+        padding: pxToRem(17);
+        text-align: center;
+    }
+}
+
+@keyframes showAndHide {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
