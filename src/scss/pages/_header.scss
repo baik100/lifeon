@@ -83,3 +83,158 @@
         }
     }
 }
+
+.lon-sidenav {
+    position: fixed;
+    top: 0;
+    left: pxToRem(-315);
+    bottom: 0;
+    width: pxToRem(304);
+    z-index: 2000;
+    background: #fff;
+    padding: pxToRem(38) pxToRem(16);
+    -webkit-box-shadow: 0 pxToRem(5) pxToRem(5) pxToRem(4) rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 pxToRem(5) pxToRem(5) pxToRem(4) rgba(0, 0, 0, 0.1);
+    box-shadow: 0 pxToRem(5) pxToRem(5) pxToRem(4) rgba(0, 0, 0, 0.1);
+    -webkit-transition:  .6s;
+    -moz-transition:  .6s;
+    -ms-transition:  .6s;
+    -o-transition:  .6s;
+    transition:  .6s;
+    .is-side-open & {
+        left: 0;
+    }
+    .lon-logo-group {
+        position: relative;
+        .logo {
+            width: pxToRem(70);
+        }
+        .language {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            > span {
+                font-size: pxToRem(12);
+                font-weight: bold;
+                color: rgb(216, 216, 216);
+                border: 1px solid rgb(216, 216, 216);
+                padding: pxToRem(4) pxToRem(16);
+                -webkit-border-radius: pxToRem(14);
+                -moz-border-radius: pxToRem(14);
+                border-radius: pxToRem(14);
+                img {
+                    width: pxToRem(13);
+                    margin-top: pxToRem(3);
+                    margin-left: pxToRem(5);
+                }
+                &.en {
+                    display: none;
+                }
+            }
+        }
+
+    }
+    .user-id {
+        padding: pxToRem(38) 0 pxToRem(33);
+        font-size: pxToRem(17);
+        font-weight: bold;
+    }
+    .gnb {
+        ul {
+            .nav-item {
+                height: pxToRem(48);
+                line-height: pxToRem(48);
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                img {
+                    width: pxToRem(22);
+                }
+                a {
+                    display: block;
+                    font-size: pxToRem(14);
+                    font-weight: bold;
+                    margin-left: pxToRem(14);
+                }
+            }
+        }
+    }
+    .corp-info {
+        p {
+            font-size: pxToRem(12);
+            font-weight: lighter;
+            margin-bottom: pxToRem(6);
+        }
+    }
+    .lon-logout {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgb(51, 51, 51);
+        z-index: 10;
+        height: pxToRem(48);
+        line-height: pxToRem(48);
+        color: #fff;
+        font-size: pxToRem(14);
+        font-weight: bold;
+        text-transform: uppercase;
+
+        img {
+            margin: pxToRem(14) pxToRem(16) pxToRem(14) pxToRem(18);
+            width: pxToRem(22);
+        }
+    }
+}
+.side-screen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1600;
+    background: rgba(0, 0, 0, 0.1);
+    -webkit-transition:  .6s;
+    -moz-transition:  .6s;
+    -ms-transition:  .6s;
+    -o-transition:  .6s;
+    transition:  .6s;
+    .is-side-open & {
+        display: block;
+    }
+}
+
+//category-header
+.lon-home-category {
+    height: pxToRem(48);
+    ul {
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+        .category-item {
+            padding: pxToRem(13) pxToRem(16) 0;
+            font-size: pxToRem(14);
+            font-weight: normal;
+            &.on {
+                span {
+                    font-weight: bold;
+                    border-bottom: pxToRem(2) solid #000;
+                }
+            }
+            span {
+                display: block;
+                padding-bottom: pxToRem(12);
+                border-bottom: pxToRem(2) solid transparent;
+                -webkit-transition:  .6s;
+                -moz-transition:  .6s;
+                -ms-transition:  .6s;
+                -o-transition:  .6s;
+                transition:  .6s;
+            }
+        }
+    }
+}

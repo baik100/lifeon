@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<include src="../components/head.html"></include>
+<body>
+<div id="wrap">
+    <div class="lon-home">
+        <include src="../components/header.html"></include>
+        <include src="../components/category-header.html"></include>
+
+        <div class="lon-style">
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="../../images/item-1.jpg" alt="">
+                </div>
+                <div class="grid-item">
+                    <img src="../../images/item-2.jpg" alt="">
+                </div>
+                <div class="grid-item">
+                    <img src="../../images/item-3.jpg" alt="">
+                </div>
+                <div class="grid-item">
+                    <img src="../../images/item-4.png" alt="">
+                </div>
+                <div class="grid-item">
+                    <img src="../../images/item-5.jpg" alt="">
+                </div>
+                <div class="grid-item">
+                    <img src="../../images/item-6.jpg" alt="">
+                </div>
+                <div class="grid-item">
+                    <img src="../../images/item-7.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('.grid').masonry({
+        // set itemSelector so .grid-sizer is not used in layout
+        itemSelector: '.grid-item',
+        // use element for option
+        columnWidth: '.grid-sizer',
+        percentPosition: true
+    })
+</script>
+
+</body>
+</html>
