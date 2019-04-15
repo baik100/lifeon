@@ -238,3 +238,88 @@
         }
     }
 }
+
+//premium header
+.lon-premium-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: pxToRem(66);
+    background: #fff;
+    display: flex;
+    z-index: 1500;
+    align-items: center;
+    -webkit-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+    box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+
+    .lon-btn-nav {
+        padding: 0 pxToRem(16);
+        img {
+            width: pxToRem(24);
+            height: pxToRem(24);
+            cursor: pointer;
+        }
+    }
+    .lon-logo {
+        font-size: pxToRem(16);
+        img {
+            width: pxToRem(70);
+            margin-right: pxToRem(13);
+        }
+    }
+}
+
+//mypage header
+.lon-mypage-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: pxToRem(66);
+    background: #fff;
+    display: flex;
+    z-index: 1500;
+    align-items: center;
+    -webkit-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+    box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+    .lon-btn-nav {
+        padding: 0 pxToRem(16);
+        img {
+            width: pxToRem(24);
+            height: pxToRem(24);
+            cursor: pointer;
+        }
+    }
+    .lon-mypage-tab {
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: pxToRem(24);
+            line-height: pxToRem(24);
+            -webkit-border-radius: pxToRem(3);
+            -moz-border-radius: pxToRem(3);
+            border-radius: pxToRem(3);
+            border: pxToRem(1) solid rgb(151, 151, 151);
+            .mypage-item {
+                font-size: pxToRem(13);
+                width: pxToRem(94);
+                text-align: center;
+                text-transform: uppercase;
+                font-family: CenturyGothic;
+                letter-spacing: pxToRem(-0.08);
+                color: rgb(151, 151, 151);
+                &.on {
+                    background: rgb(51, 51, 51);
+                    color: #fff;
+                }
+                + .mypage-item {
+                    border-left: pxToRem(1) solid rgb(151, 151, 151);
+                }
+            }
+        }
+    }
+}

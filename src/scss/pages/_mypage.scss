@@ -1,0 +1,209 @@
+//mypage
+.lon-mypage {
+    border-bottom: pxToRem(1) solid rgb(230, 230, 230);
+    .lon-mypage-inquiry {
+        padding: pxToRem(16);
+        font-size: pxToRem(16);
+        .user-name {
+            margin-bottom: pxToRem(6);
+            font-weight: bold;
+        }
+
+        .user-email {
+            margin-bottom: pxToRem(6);
+        }
+        .user-location {
+            .user-sqm {
+                display: block;
+                margin: pxToRem(4) 0 pxToRem(13);
+                font-size: pxToRem(14);
+            }
+            .user-photo {
+                ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .photo {
+                        width: pxToRem(84);
+                        height: pxToRem(84);
+                        text-align: center;
+                        line-height: pxToRem(84);
+                        background: rgb(216, 216, 216);
+                        border: pxToRem(1) solid rgb(151, 151, 151);
+                        font-size: pxToRem(13);
+                        font-weight: normal;
+                        color: rgb(51, 51, 51);
+                        + .photo {
+                            margin-left: pxToRem(16);
+                        }
+                    }
+                }
+            }
+        }
+        .user-memo {
+            margin: pxToRem(12) 0;
+            font-size: pxToRem(14);
+            width: pxToRem(305);
+            text-align: justify;
+            span {
+                display: block;
+                font-weight: bold;
+            }
+        }
+        .user-moving-date, .user-inquiry-date {
+            margin-bottom: pxToRem(12);
+            font-size: pxToRem(12);
+            dl {
+                dt {
+                    display: inline-block;
+                }
+                dd {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .lon-mypage-bookmark {
+        display: none;
+        .lon-bookmark {
+            .grid {
+                .grid-item {
+                    float: left;
+                    width: 50%;
+                    padding: pxToRem(8);
+                    &:hover {
+                        .bookmark-desc {
+                            display: block;
+                        }
+                    }
+
+                    .bookmark-thumb {
+                        position: relative;
+                        img {
+                            -webkit-border-radius: pxToRem(4);
+                            -moz-border-radius: pxToRem(4);
+                            border-radius: pxToRem(4);
+                        }
+                    }
+                    .bookmark-desc {
+                        display: none;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        z-index: 10;
+                        padding: pxToRem(20);
+                        &:before {
+                            content: '';
+                            margin: pxToRem(8);
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            background: rgba(0, 0, 0, 0.8);
+                            z-index: -1;
+                            -webkit-border-radius: pxToRem(4);
+                            -moz-border-radius: pxToRem(4);
+                            border-radius: pxToRem(4);
+                        }
+                        span {
+                            display: inline-block;
+                            margin-bottom: pxToRem(9);
+                            color: rgb(255, 255, 255);
+                            font-size: pxToRem(9);
+                            -webkit-border-radius: pxToRem(12);
+                            -moz-border-radius: pxToRem(12);
+                            border-radius: pxToRem(12);
+                            border: pxToRem(0.8) solid rgb(255, 255, 255);
+                            padding: pxToRem(3) pxToRem(16) pxToRem(4);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .lon-mypage-contract {
+        display: none;
+        padding: pxToRem(16);
+        .user-art-name {
+            font-size: pxToRem(16);
+            font-weight: bold;
+            margin-bottom: pxToRem(3);
+            >div {
+                font-size: pxToRem(14);
+                font-weight: normal;
+            }
+        }
+        .user-contract-date {
+            font-size: pxToRem(12);
+            margin-bottom: pxToRem(4);
+            line-height: pxToRem(22);
+            padding-left: pxToRem(8);
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                top: pxToRem(6);
+                left: 0;
+                bottom: pxToRem(6);
+                width: pxToRem(1);
+                background: rgb(230, 230, 230);
+            }
+            dl {
+                display: block;
+                dt {
+                    display: inline-block;
+                    font-weight: bold;
+                    width: pxToRem(60);
+                }
+                dd {
+                    display: inline-block;
+                    width: pxToRem(90);
+                }
+            }
+        }
+        .user-contract-price {
+            font-size: pxToRem(12);
+            line-height: pxToRem(22);
+            padding-left: pxToRem(8);
+            position: relative;
+            margin-bottom: pxToRem(10);
+            &:before {
+                content: '';
+                position: absolute;
+                top: pxToRem(6);
+                left: 0;
+                bottom: pxToRem(6);
+                width: pxToRem(1);
+                background: rgb(230, 230, 230);
+            }
+            dl {
+                dt {
+                    float: left;
+                    font-weight: bold;
+                }
+                dd {
+                    float: left;
+                    &.price {
+                        float: right;
+                    }
+                }
+            }
+        }
+        .user-state {
+            font-size: pxToRem(12);
+            margin-bottom: pxToRem(10);
+        }
+        .btn-area {
+            .btn-contract-detail {
+                color: rgb(100, 100, 100);
+                height: pxToRem(40);
+                border: pxToRem(1) solid rgb(230, 230, 230);
+                font-size: pxToRem(12);
+                font-weight: bold;
+            }
+        }
+    }
+}
