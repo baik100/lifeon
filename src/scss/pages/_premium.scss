@@ -1,0 +1,117 @@
+//premium
+
+.lon-premium {
+    .lon-premium-banner {
+        max-height: pxToRem(112);
+        overflow: hidden;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1;
+        }
+        img {
+            width: 100%;
+        }
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 10;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            font-size: pxToRem(14);
+            letter-spacing: pxToRem(-0.22);
+        }
+    }
+    .lon-premium-inputgroup {
+        .premium-inquiry {
+            padding: pxToRem(16);
+            h5 {
+                font-size: pxToRem(14);
+            }
+            .premium-input {
+                display: block;
+                width: 100%;
+                padding: pxToRem(17) 0 pxToRem(7);
+                border-bottom: 1px solid rgb(200, 200, 200);
+                font-size: pxToRem(16);
+                margin-bottom: pxToRem(17);
+                color: rgb(200,200,200);
+                min-height: pxToRem(48);
+            }
+            .premium-fileloader {
+                position: relative;
+                .fileloader {
+                    display: none;
+                }
+                .btn-fileloader {
+                    img {
+                        position: absolute;
+                        bottom: pxToRem(7);
+                        right: 0;
+                        width: pxToRem(22);
+                        cursor: pointer;
+                    }
+                }
+            }
+            .premium-selectbox {
+                position: relative;
+                .btn-select {
+                    position: absolute;
+                    bottom: pxToRem(7);
+                    right: 0;
+                    z-index: -1;
+                    img {
+                        width: pxToRem(22);
+                        cursor: pointer;
+                    }
+                }
+            }
+            .premium-moving-date, .premium-inquiry-date {
+                .date-picker {
+                    .input-date {
+                        padding: pxToRem(17) 0 pxToRem(7);
+                        border-bottom: 1px solid rgb(200, 200, 200);
+                        font-size: pxToRem(16);
+                        color: rgb(200, 200, 200);
+                        position: relative;
+                        margin-bottom: pxToRem(17);
+                        .btn-date-picker {
+                            position: absolute;
+                            right: 0;
+                            bottom: pxToRem(7);
+                            img {
+                                width: pxToRem(24);
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+                p {
+                    font-size: pxToRem(10);
+                    color: rgb(51, 51, 51);
+                    margin-bottom: pxToRem(16);
+                }
+            }
+        }
+        .btn-premium-submit {
+            display: block;
+            width: 100%;
+            height: pxToRem(48);
+            line-height: pxToRem(48);
+            color: #fff;
+            background: rgb(51, 51, 51);
+            font-size: pxToRem(16);
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+}
