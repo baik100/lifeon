@@ -96,3 +96,73 @@ html, body {
         z-index: 100;
     }
 }
+
+.confirm-popup {
+    display: none;
+    .confirm-popup-inner {
+        min-width: pxToRem(288);
+        min-height: pxToRem(172);
+        padding: pxToRem(40) 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: pxToRem(20);
+        font-weight: bold;
+        color: rgb(51, 51, 51);
+        span {
+            font-size: pxToRem(16);
+            text-align: center;
+            font-weight: normal;
+            margin-top: pxToRem(25);
+        }
+        img {
+            display: block;
+            width: pxToRem(56);
+            margin-top: pxToRem(14);
+        }
+    }
+}
+
+.fileloader-area {
+    position: relative;
+    .fileloader {
+        display: none;
+    }
+    .btn-fileloader {
+        img {
+            position: absolute;
+            bottom: pxToRem(7);
+            right: 0;
+            width: pxToRem(22);
+            cursor: pointer;
+        }
+    }
+    .filename {
+        display: block;
+        width: 100%;
+        padding: pxToRem(17) 0 pxToRem(7);
+        border-bottom: 1px solid rgb(200, 200, 200);
+        font-size: pxToRem(16);
+        margin-bottom: pxToRem(17);
+        color: rgb(200,200,200);
+        min-height: pxToRem(48);
+    }
+}
+
+.input-area {
+    h5 {
+        font-size: pxToRem(14);
+    }
+    .form-input {
+        display: block;
+        width: 100%;
+        padding: pxToRem(17) 0 pxToRem(7);
+        border-bottom: 1px solid rgb(200, 200, 200);
+        font-size: pxToRem(16);
+        margin-bottom: pxToRem(17);
+        color: rgb(200,200,200);
+        min-height: pxToRem(48);
+    }
+}
+

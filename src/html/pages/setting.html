@@ -25,7 +25,31 @@
             </div>
             <button type="submit" class="btn btn-setting-submit">확인</button>
         </form>
+        <div class="confirm-popup ly-popup">
+            <div class="ly-popup-screen"></div>
+            <div class="confirm-popup-inner ly-popup-inner">
+                비밀번호 변경 완료
+                <img src="../../images/icSuccessCopy@3x.png" alt="">
+            </div>
+        </div>
     </div>
 </div>
+
+<script>
+
+    handlePopup();
+
+    function handlePopup() {
+        $('.btn-setting-submit').on('click',function (e) {
+            e.preventDefault();
+            $('.confirm-popup').show();
+        })
+        $('.confirm-popup .ly-popup-screen').on('click',function () {
+            $('.confirm-popup').hide();
+        })
+    }
+
+</script>
+
 </body>
 </html>

@@ -47,21 +47,6 @@
                 color: rgb(200,200,200);
                 min-height: pxToRem(48);
             }
-            .premium-fileloader {
-                position: relative;
-                .fileloader {
-                    display: none;
-                }
-                .btn-fileloader {
-                    img {
-                        position: absolute;
-                        bottom: pxToRem(7);
-                        right: 0;
-                        width: pxToRem(22);
-                        cursor: pointer;
-                    }
-                }
-            }
             .premium-selectbox {
                 position: relative;
                 .btn-select {

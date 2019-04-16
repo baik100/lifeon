@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<include src="../components/head.html"></include>
+<body>
+<div id="wrap">
+    <div class="lon-mypage-contract">
+        <include src="../components/side-header.html"></include>
+        <include src="../components/contract-detail-history-inquiry-write-header.html"></include>
+
+        <div class="lon-mypage-contract-history-inquiry">
+            <div class="contract-history-inquiry-write">
+                <div class="inquiry-subject input-area">
+                    <h5>제목</h5>
+                    <label>
+                        <input type="text" class="form-input form-control" placeholder="문의 제목">
+                    </label>
+                </div>
+                <div class="inquiry-text input-area">
+                    <h5>내용 (100자 이내)</h5>
+                    <label>
+                        <input type="text" class="form-input form-control" placeholder="내용">
+                    </label>
+                </div>
+                <div class="fileloader-area">
+                    <h5>사진(최대 3장)</h5>
+                    <label for="fileLoader" class="btn-fileloader">
+                        <img src="../../images/icon-file.png" alt="">
+                    </label>
+                    <div class="filename file-input">사진첨부</div>
+                    <input type="file" class="fileloader form-control" id="fileLoader">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
