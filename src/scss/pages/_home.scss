@@ -54,9 +54,6 @@
 
 //style
 .grid-item {
-    float: left;
-    width: 50%;
-    padding: pxToRem(8);
     &:hover {
         .style-desc {
             display: block;

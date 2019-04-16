@@ -293,8 +293,8 @@
             cursor: pointer;
         }
     }
-    .lon-mypage-tab {
-        ul {
+    .lon-mypage-menu {
+        nav {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -304,7 +304,7 @@
             -moz-border-radius: pxToRem(3);
             border-radius: pxToRem(3);
             border: pxToRem(1) solid rgb(151, 151, 151);
-            .mypage-item {
+            .mypage-link {
                 font-size: pxToRem(13);
                 width: pxToRem(94);
                 text-align: center;
@@ -312,14 +312,131 @@
                 font-family: CenturyGothic;
                 letter-spacing: pxToRem(-0.08);
                 color: rgb(151, 151, 151);
-                &.on {
+                &.currentPath {
                     background: rgb(51, 51, 51);
                     color: #fff;
                 }
-                + .mypage-item {
+                + .mypage-link {
                     border-left: pxToRem(1) solid rgb(151, 151, 151);
                 }
             }
+        }
+    }
+}
+
+//contract detail header
+.lon-contract-detail-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: pxToRem(66);
+    background: #fff;
+    display: flex;
+    z-index: 1500;
+    align-items: center;
+    -webkit-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+    box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+    .lon-btn-nav {
+        display: none;
+        padding: 0 pxToRem(16);
+        img {
+            width: pxToRem(24);
+            height: pxToRem(24);
+            cursor: pointer;
+        }
+    }
+    .lon-btn-prev {
+        padding: 0 pxToRem(16);
+        img {
+            width: pxToRem(24);
+            height: pxToRem(24);
+            cursor: pointer;
+        }
+    }
+}
+
+//contract detail document header
+.lon-contract-detail-document-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: pxToRem(66);
+    background: #fff;
+    display: flex;
+    z-index: 1500;
+    align-items: center;
+    -webkit-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+    box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+    .lon-btn-nav, .lon-btn-prev {
+        display: none;
+        padding: 0 pxToRem(16);
+        img {
+            width: pxToRem(24);
+            height: pxToRem(24);
+            cursor: pointer;
+        }
+    }
+    .lon-btn-close {
+        padding: 0 pxToRem(16);
+        img {
+            width: pxToRem(24);
+            height: pxToRem(24);
+            cursor: pointer;
+        }
+    }
+    .lon-btn-share {
+        padding: 0 pxToRem(16);
+        margin-left: auto;
+        img {
+            width: pxToRem(24);
+            height: pxToRem(24);
+            cursor: pointer;
+        }
+    }
+}
+
+//contract detail document header
+.lon-contract-detail-history-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: pxToRem(66);
+    background: #fff;
+    display: flex;
+    z-index: 1500;
+    align-items: center;
+    -webkit-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+    box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+    .lon-btn-nav, .lon-btn-close, .lon-btn-share {
+        display: none;
+        padding: 0 pxToRem(16);
+        img {
+            width: pxToRem(24);
+            height: pxToRem(24);
+            cursor: pointer;
+        }
+    }
+    .lon-btn-prev {
+        padding: 0 pxToRem(16);
+        img {
+            width: pxToRem(24);
+            height: pxToRem(24);
+            cursor: pointer;
+        }
+    }
+    .lon-btn-inquiry {
+        padding: 0 pxToRem(16);
+        margin-left: auto;
+        img {
+            width: pxToRem(24);
+            height: pxToRem(24);
+            cursor: pointer;
         }
     }
 }

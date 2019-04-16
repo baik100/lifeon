@@ -115,3 +115,71 @@
         }
     }
 }
+
+//moving-datepicker
+.moving-datepicker, .inquiry-datepicker {
+    display: none;
+    .datepicker-inner {
+        min-width: pxToRem(328);
+        h3 {
+            padding: pxToRem(24) 0 pxToRem(20);
+            font-size: pxToRem(20);
+            font-weight: bold;
+            color: rgb(51, 51, 51);
+            text-align: center;
+        }
+    }
+    .datepicker-select-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: pxToRem(14);
+        font-weight: bold;
+        color: #000;
+        padding: pxToRem(8) pxToRem(16);
+        margin-bottom: pxToRem(12);
+        .datepicker-select {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-border-radius: pxToRem(4);
+            -moz-border-radius: pxToRem(4);
+            border-radius: pxToRem(4);
+            border: pxToRem(1) solid rgb(230, 230, 230);
+            margin-left: pxToRem(16);
+            min-width: pxToRem(254);
+            height: pxToRem(48);
+            padding-right: pxToRem(12);
+            > div {
+                position: relative;
+                padding: 0 pxToRem(12);
+                .btn-dropdown {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    z-index: -1;
+                    width: pxToRem(22);
+                }
+            }
+        }
+    }
+    .btn-date-area {
+        border-top: pxToRem(1) solid rgb(230, 230, 230);
+        .btn-date-reset,.btn-date-save {
+            float: left;
+            width: 50%;
+            text-align: center;
+            height: pxToRem(48);
+            line-height: pxToRem(48);
+            &.btn-date-reset {
+                font-weight: bold;
+                color: rgb(180, 180, 180);
+            }
+            &.btn-date-save {
+                font-weight: bold;
+                color: rgb(100, 100, 100);
+                border-left: pxToRem(1) solid rgb(230, 230, 230);
+            }
+        }
+    }
+}

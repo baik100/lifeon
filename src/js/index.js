@@ -10,7 +10,8 @@ const lifeon = {
         lifeon.handleSideOpen();
         lifeon.loadImages();
         lifeon.fileLodaer();
-        lifeon.navTab();
+        lifeon.navActive();
+        lifeon.historyBack();
     },
 
     onSearch : function () {
@@ -31,21 +32,19 @@ const lifeon = {
         })
     },
 
-    navTab : function () {
-        const defaultIndex = 0;
+    navActive : function () {
+        const pathName = location.pathname;
 
-        $('.tab-nav').on('click',function () {
+        $('.mypage-link').each(function () {
             const self = $(this);
-            const tabContent = $('.tab-content');
+            const linkUrl = self.attr('href').split('/').pop();
+            const pathInfo = pathName.split('/').pop();
 
-            self.addClass('on').siblings().removeClass('on');
-
-            // const dataPanel = $this.attr('data-panel');
-            const dataPanel = self.data('tab');
-
-            tabContent.hide();
-            $(dataPanel).show();
-        }).eq(defaultIndex).trigger('click');
+            if (linkUrl === pathInfo) {
+                console.log(this);
+                self.addClass('currentPath');
+            }
+        })
     },
 
     loadImages : function () {
@@ -68,6 +67,12 @@ const lifeon = {
             const filename = value.split('\\').pop();
 
             $('.filename').text(filename);
+        })
+    },
+
+    historyBack : function () {
+        $('.btn-back').on('click',function () {
+            window.history.back();
         })
     },
 

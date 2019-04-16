@@ -116,6 +116,10 @@ button, select {
     text-transform: none;
 }
 
+button:focus, select:focus {
+    outline: none;
+}
+
 button, html [type="button"], [type="reset"], [type="submit"] {
     -webkit-appearance: button;
 }
