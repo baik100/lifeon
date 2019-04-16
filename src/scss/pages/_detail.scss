@@ -51,6 +51,8 @@
         font-size: pxToRem(14);
         line-height: pxToRem(24);
         color: rgb(51, 51, 51);
+        text-align: justify;
+        letter-spacing: pxToRem(-0.22);
     }
     .detail-video {
         padding: pxToRem(24) 0 pxToRem(17);

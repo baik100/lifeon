@@ -63,7 +63,7 @@
                     </div>
                 </div>
 
-                <div class="premium-fileloader">
+                <div class="premium-fileloader fileloader-area">
                     <h5>사진(최대 3장)</h5>
                     <label for="fileLoader" class="btn-fileloader">
                         <img src="../../images/icon-file.png" alt="">
@@ -320,12 +320,23 @@
     </div>
 </div>
 
+<div class="confirm-popup ly-popup">
+    <div class="ly-popup-screen"></div>
+    <div class="confirm-popup-inner ly-popup-inner">
+        상담신청 완료
+        <img src="../../images/icSuccessCopy@3x.png" alt="">
+        <span>상담신청이 완료되었습니다.<br>
+        곧 연락드리겠습니다.</span>
+    </div>
+</div>
+
 
 <script>
 
-    handlePopup();
+    handleDatePicker();
+    handlePremiumPopup();
 
-    function handlePopup() {
+    function handleDatePicker() {
         $('.premium-moving-date .btn-date-picker').on('click',function () {
             $('.moving-datepicker').show();
         })
@@ -338,6 +349,17 @@
             $('.moving-datepicker, .inquiry-datepicker').hide();
         })
     }
+
+    function handlePremiumPopup() {
+        $('.btn-premium-submit').on('click',function (e) {
+            e.preventDefault();
+            $('.confirm-popup').show();
+        })
+        $('.confirm-popup .ly-popup-screen').on('click',function () {
+            $('.confirm-popup').hide();
+        })
+    }
+
 
 </script>
 

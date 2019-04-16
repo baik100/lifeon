@@ -207,6 +207,7 @@
                 }
                 &.btn-contract-history {
                     margin-top: pxToRem(12);
+                    letter-spacing: pxToRem(-0.22);
                 }
             }
         }
@@ -217,5 +218,72 @@
     .lon-mypage-contract-document {
         padding: pxToRem(40) pxToRem(20);
     }
-
+    .lon-mypage-contract-history {
+        .contract-history-content,
+        .contract-history-confirm-content,
+        .contract-history-inquiry-content {
+            padding: pxToRem(18) pxToRem(16);
+            border-bottom: pxToRem(1) solid rgb(230, 230, 230);
+            h3 {
+                font-size: pxToRem(16);
+                font-weight: bold;
+                &.point {
+                    color: rgb(218, 95, 95);
+                }
+            }
+            p {
+                font-size: pxToRem(14);
+                margin-bottom: pxToRem(14);
+            }
+            .create-date {
+                font-size: pxToRem(12);
+                strong {
+                    font-weight: bold;
+                }
+            }
+            .contract-history-info,
+            .contract-history-price,
+            .contract-inquiry-info {
+                font-size: pxToRem(12);
+                line-height: pxToRem(22);
+                padding-left: pxToRem(8);
+                position: relative;
+                margin-bottom: pxToRem(10);
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: pxToRem(6);
+                    left: 0;
+                    bottom: pxToRem(6);
+                    width: pxToRem(1);
+                    background: rgb(230, 230, 230);
+                }
+                dl {
+                    dt {
+                        float: left;
+                        font-weight: bold;
+                        padding-right: pxToRem(10);
+                    }
+                    dd {
+                        float: left;
+                        &.price {
+                            float: right;
+                        }
+                    }
+                }
+            }
+            .btn-area {
+                .btn-history-confirm {
+                    color: rgb(100, 100, 100);
+                    height: pxToRem(40);
+                    border: pxToRem(1) solid rgb(230, 230, 230);
+                    font-size: pxToRem(12);
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .lon-mypage-contract-history-inquiry {
+        padding: pxToRem(16);
+    }
 }

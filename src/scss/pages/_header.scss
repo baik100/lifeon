@@ -414,7 +414,6 @@
     -moz-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
     box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
     .lon-btn-nav, .lon-btn-close, .lon-btn-share {
-        display: none;
         padding: 0 pxToRem(16);
         img {
             width: pxToRem(24);
@@ -433,10 +432,7 @@
     .lon-btn-inquiry {
         padding: 0 pxToRem(16);
         margin-left: auto;
-        img {
-            width: pxToRem(24);
-            height: pxToRem(24);
-            cursor: pointer;
-        }
+        font-size: pxToRem(14);
+        cursor: pointer;
     }
 }
