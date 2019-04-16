@@ -24,17 +24,16 @@
                     align-items: center;
                     justify-content: center;
                     .photo {
-                        width: pxToRem(84);
-                        height: pxToRem(84);
                         text-align: center;
-                        line-height: pxToRem(84);
                         background: rgb(216, 216, 216);
                         border: pxToRem(1) solid rgb(151, 151, 151);
                         font-size: pxToRem(13);
                         font-weight: normal;
                         color: rgb(51, 51, 51);
+                        img {
+                        }
                         + .photo {
-                            margin-left: pxToRem(16);
+                            margin-left: pxToRem(8);
                         }
                     }
                 }
@@ -64,13 +63,9 @@
         }
     }
     .lon-mypage-bookmark {
-        display: none;
         .lon-bookmark {
             .grid {
                 .grid-item {
-                    float: left;
-                    width: 50%;
-                    padding: pxToRem(8);
                     &:hover {
                         .bookmark-desc {
                             display: block;
@@ -125,7 +120,6 @@
         }
     }
     .lon-mypage-contract {
-        display: none;
         padding: pxToRem(16);
         .user-art-name {
             font-size: pxToRem(16);
@@ -183,6 +177,7 @@
                 dt {
                     float: left;
                     font-weight: bold;
+                    padding-right: pxToRem(10);
                 }
                 dd {
                     float: left;
@@ -197,13 +192,30 @@
             margin-bottom: pxToRem(10);
         }
         .btn-area {
-            .btn-contract-detail {
+            > .btn {
                 color: rgb(100, 100, 100);
                 height: pxToRem(40);
                 border: pxToRem(1) solid rgb(230, 230, 230);
                 font-size: pxToRem(12);
                 font-weight: bold;
+                &.btn-contract-document, .btn-contract-estimate {
+                    float: left;
+                    width: 50%;
+                }
+                &.btn-contract-estimate {
+                    border-left: none;
+                }
+                &.btn-contract-history {
+                    margin-top: pxToRem(12);
+                }
             }
         }
     }
+}
+
+.lon-mypage-contract {
+    .lon-mypage-contract-document {
+        padding: pxToRem(40) pxToRem(20);
+    }
+
 }

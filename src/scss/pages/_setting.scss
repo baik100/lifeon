@@ -1,0 +1,33 @@
+//setting
+.lon-setting {
+    .lon-setting-area {
+        .setting-group {
+            padding: pxToRem(16);
+            h5 {
+                font-size: pxToRem(14);
+            }
+            .setting-input {
+                display: block;
+                width: 100%;
+                padding: pxToRem(17) 0 pxToRem(7);
+                border-bottom: 1px solid rgb(200, 200, 200);
+                font-size: pxToRem(16);
+                margin-bottom: pxToRem(17);
+                color: rgb(0,0,0);
+                min-height: pxToRem(48);
+            }
+        }
+        .btn-setting-submit {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: pxToRem(48);
+            line-height: pxToRem(48);
+            color: #fff;
+            background: rgb(51, 51, 51);
+            font-size: pxToRem(16);
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+}

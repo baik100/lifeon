@@ -3,10 +3,9 @@
 <include src="../components/head.html"></include>
 <body>
 <div id="wrap">
+    <include src="../components/side-header.html"></include>
+    <include src="../components/mypage-header.html"></include>
     <div class="lon-mypage">
-        <include src="../components/side-header.html"></include>
-        <include src="../components/contract-detail-header.html"></include>
-
         <div class="lon-mypage-contract">
             <div class="user-art-name">
                 아파트 이름
@@ -15,30 +14,22 @@
             </div>
             <div class="user-contract-date">
                 <dl>
-                    <dt>에이전트 :</dt>
-                    <dd> 에이전트 이름</dd>
-                </dl>
-                <dl>
-                    <dt>상담일 :</dt>
-                    <dd> 2018. 12. 20</dd>
-                </dl>
-                <dl>
                     <dt>계약일 :</dt>
                     <dd>2019. 01. 20</dd>
+                </dl>
+                <dl>
                     <dt>준공일 :</dt>
                     <dd>2019. 03. 20</dd>
                 </dl>
                 <dl>
                     <dt>AS 만료일 :</dt>
                     <dd>2020. 12. 20</dd>
-                    <dt>입주일 :</dt>
-                    <dd>2020. 01. 21</dd>
                 </dl>
             </div>
             <div class="user-contract-price">
                 <dl class="clearfix">
-                    <dt>입금정보 : </dt>
-                    <dd> 00은행 1234-5678-9012</dd>
+                    <dt>견적금액 : </dt>
+                    <dd class="price">8,123,456,789 VND</dd>
                 </dl>
                 <dl class="clearfix">
                     <dt>계약금 :</dt>
@@ -53,9 +44,7 @@
                 <strong>진행단계 :</strong> 공사중
             </div>
             <div class="btn-area">
-                <a href="./contract-detail-document.html" class="btn btn-contract-document">계약서</a>
-                <a href="./contract-detail-estimate.html" class="btn btn-contract-estimate">견적서</a>
-                <a href="./contract-detail-history.html" class="btn btn-contract-history">계약진행 히스토리</a>
+                <a href="./contract-detail.html" class="btn btn-contract-detail">계약상세</a>
             </div>
         </div>
     </div>

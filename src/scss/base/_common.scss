@@ -49,45 +49,11 @@ html, body {
     }
 }
 
-.masonry-grid {
-    .masonry-grid-item {
-        position: relative;
-        width: 50%;
-        padding: pxToRem(8);
+.grid {
+    .grid-item {
         float: left;
-    }
-}
-
-.page-container {
-    .onSearch & {
-        display: none;
-    }
-}
-
-.search-result {
-    display: none;
-    .enterWord & {
-        display: block;
-    }
-
-    .products {
-        .product-item {
-            position: relative;
-            display: block;
-            cursor: pointer;
-            .desc {
-                position: absolute;
-                left: pxToRem(8);
-                bottom: pxToRem(14);
-
-                h3 {
-                    font-size: pxToRem(20);
-                    font-weight: bold;
-                    color: #fff;
-                    text-transform: capitalize;
-                }
-            }
-        }
+        width: 50%;
+        padding: pxToRem(8)
     }
 }
 
@@ -99,5 +65,34 @@ html, body {
     justify-content: center;
     &:focus {
         outline: 0;
+    }
+}
+
+.ly-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2000;
+    .ly-popup-inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 1000;
+        background: #fff;
+        -webkit-border-radius: pxToRem(4);
+        -moz-border-radius: pxToRem(4);
+        border-radius: pxToRem(4);
+    }
+    .ly-popup-screen {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 100;
     }
 }
