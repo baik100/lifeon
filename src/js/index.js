@@ -12,6 +12,7 @@ const lifeon = {
         lifeon.fileLodaer();
         lifeon.navActive();
         lifeon.historyBack();
+        lifeon.handleFilter();
     },
 
     onSearch : function () {
@@ -76,5 +77,33 @@ const lifeon = {
         })
     },
 
+    handleFilter : function () {
+        $('.lon-filter').on('click',function () {
+            $('html,body').addClass('onFilter')
+        })
 
+        $('.btn-close').on('click',function () {
+            $('html,body').removeClass('onFilter')
+        })
+
+        //filter lib
+        $(".range-slider").ionRangeSlider({
+            type: "double",
+            min: 0,
+            max: 100,
+            from: 20,
+            to: 40,
+            grid: true,
+            drag_interval: true,
+        });
+
+
+        //data reset
+        let my_range = $(".range-slider").data("ionRangeSlider");
+
+        $('.lon-btn-reset').on('click',function () {
+            my_range.reset();
+        })
+
+    }
 };

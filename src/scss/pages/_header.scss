@@ -436,3 +436,41 @@
         cursor: pointer;
     }
 }
+
+//filter header
+.lon-filter-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: pxToRem(66);
+    background: #fff;
+    display: flex;
+    z-index: 1500;
+    align-items: center;
+    -webkit-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+    box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+    .lon-btn-close {
+        padding: 0 pxToRem(16);
+        img {
+            width: pxToRem(24);
+            height: pxToRem(24);
+            cursor: pointer;
+        }
+    }
+    .lon-filter-title {
+        font-size: pxToRem(20);
+        font-weight: bolder;
+        font-family: Montserrat;
+        text-align: center;
+        flex-grow: 1;
+        text-transform: uppercase;
+    }
+    .lon-btn-reset {
+        padding: 0 pxToRem(16);
+        margin-left: auto;
+        font-size: pxToRem(14);
+        cursor: pointer;
+    }
+}
