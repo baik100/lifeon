@@ -1,5 +1,8 @@
 //detail
 .lon-detail {
+    .onSearch & {
+        display: none;
+    }
     .detail-thumb {
         display: block;
         position: relative;

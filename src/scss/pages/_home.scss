@@ -1,6 +1,9 @@
 //home
 .lon-home-category-list {
     padding: pxToRem(10) pxToRem(8) 0;
+    .onSearch & {
+        display: none;
+    }
     ul {
         .category-list {
             position: relative;
@@ -52,9 +55,17 @@
     color: rgb(51, 51, 51);
     text-align: justify;
     letter-spacing: pxToRem(-0.22);
+    .onSearch & {
+        display: none;
+    }
 }
 
 //style
+.lon-style {
+    .onSearch & {
+        display: none;
+    }
+}
 .grid-item {
     &:hover {
         .style-desc {
