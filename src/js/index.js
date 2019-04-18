@@ -82,7 +82,7 @@ const lifeon = {
             $('html,body').addClass('onFilter')
         })
 
-        $('.btn-close').on('click',function () {
+        $('.btn-close, .lon-filter-screen').on('click',function () {
             $('html,body').removeClass('onFilter')
         })
 
