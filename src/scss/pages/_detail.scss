@@ -1,5 +1,8 @@
 //detail
 .lon-detail {
+    .enterWords & {
+        display: none;
+    }
     .detail-thumb {
         display: block;
         position: relative;

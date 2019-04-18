@@ -1,6 +1,9 @@
 //setting
 .lon-setting {
     .lon-setting-area {
+        .onSearch & {
+            display: none;
+        }
         .setting-group {
             padding: pxToRem(16);
             h5 {
