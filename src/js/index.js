@@ -14,6 +14,7 @@ const lifeon = {
         lifeon.historyBack();
         lifeon.handleFilter();
         lifeon.isScroll();
+        lifeon.selectDatePicker();
     },
 
     onSearch : function () {
@@ -118,5 +119,39 @@ const lifeon = {
                 $('html, body').removeClass('is-scroll')
             }
         })
+    },
+
+    selectDatePicker : function () {
+        var rangeYear = _.range(2017, 2030);
+        var rangeMonth = _.range(12, 0);
+        var rangeDay = _.range(31, 0);
+        var rangeMeridian = ["오전", "오후"];
+        var rangeHour = _.range(0, 13);
+        var rangeMinute = _.range(0, 60, 10);
+
+        $('.year select').html(rangeYear.map(function (year) {
+            return "<option value=\"\">" + year + "년</option>";
+        }));
+
+        $('.month select').html(rangeMonth.map(function (month) {
+            return "<option value=\"\">" + month + "월</option>";
+        }));
+
+        $('.date select').html(rangeDay.map(function (day) {
+            return "<option value=\"\">" + day + "일</option>";
+        }));
+
+        $('.meridian select').html(rangeMeridian.map(function (meridian) {
+            return "<option value=\"\">" + meridian + "</option>";
+        }));
+
+        $('.hour select').html(rangeHour.map(function (hour) {
+            return "<option value=\"\">" + hour + "시</option>";
+        }));
+
+        $('.minute select').html(rangeMinute.map(function (minute) {
+            return "<option value=\"\">" + minute + "분</option>";
+        }));
+
     }
 };
