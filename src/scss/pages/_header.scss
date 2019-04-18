@@ -15,6 +15,11 @@
         -moz-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
         box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
     }
+    .is-scroll & {
+        -webkit-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+        box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+    }
     .lon-btn-nav {
         padding: 0 pxToRem(16);
         img {
@@ -250,9 +255,11 @@
     display: flex;
     z-index: 1500;
     align-items: center;
-    -webkit-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
-    box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+    .is-scroll & {
+        -webkit-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+        box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
+    }
 
     .lon-btn-nav {
         padding: 0 pxToRem(16);
@@ -324,81 +331,8 @@
 }
 
 //contract detail header
-.lon-contract-detail-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: pxToRem(66);
-    background: #fff;
-    display: flex;
-    z-index: 1500;
-    align-items: center;
-    -webkit-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
-    box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
-    .lon-btn-nav {
-        display: none;
-        padding: 0 pxToRem(16);
-        img {
-            width: pxToRem(24);
-            height: pxToRem(24);
-            cursor: pointer;
-        }
-    }
-    .lon-btn-prev {
-        padding: 0 pxToRem(16);
-        img {
-            width: pxToRem(24);
-            height: pxToRem(24);
-            cursor: pointer;
-        }
-    }
-}
-
-//contract detail document header
-.lon-contract-detail-document-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: pxToRem(66);
-    background: #fff;
-    display: flex;
-    z-index: 1500;
-    align-items: center;
-    -webkit-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
-    box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
-    .lon-btn-nav, .lon-btn-prev {
-        display: none;
-        padding: 0 pxToRem(16);
-        img {
-            width: pxToRem(24);
-            height: pxToRem(24);
-            cursor: pointer;
-        }
-    }
-    .lon-btn-close {
-        padding: 0 pxToRem(16);
-        img {
-            width: pxToRem(24);
-            height: pxToRem(24);
-            cursor: pointer;
-        }
-    }
-    .lon-btn-share {
-        padding: 0 pxToRem(16);
-        margin-left: auto;
-        img {
-            width: pxToRem(24);
-            height: pxToRem(24);
-            cursor: pointer;
-        }
-    }
-}
-
-//contract detail document header
+.lon-contract-detail-header,
+.lon-contract-detail-document-header,
 .lon-contract-detail-history-header {
     position: fixed;
     top: 0;
@@ -412,7 +346,7 @@
     -webkit-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
     box-shadow: 0 pxToRem(1) pxToRem(1) pxToRem(1) rgba(0, 0, 0, 0.1);
-    .lon-btn-nav, .lon-btn-close, .lon-btn-share {
+    .lon-btn-nav, .lon-btn-close, .lon-btn-prev {
         padding: 0 pxToRem(16);
         img {
             width: pxToRem(24);
@@ -420,19 +354,16 @@
             cursor: pointer;
         }
     }
-    .lon-btn-prev {
-        padding: 0 pxToRem(16);
-        img {
-            width: pxToRem(24);
-            height: pxToRem(24);
-            cursor: pointer;
-        }
-    }
-    .lon-btn-inquiry {
+    .lon-btn-inquiry,.lon-btn-share {
         padding: 0 pxToRem(16);
         margin-left: auto;
         font-size: pxToRem(14);
         cursor: pointer;
+        img {
+            width: pxToRem(24);
+            height: pxToRem(24);
+            cursor: pointer;
+        }
     }
 }
 
