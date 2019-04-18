@@ -20,7 +20,6 @@
             margin: pxToRem(10) 0 pxToRem(4);
             font-size: pxToRem(22);
             font-weight: bold;
-            font-family: CenturyGothic;
             letter-spacing: pxToRem(-0.86);
         }
         .detail-tag {
@@ -36,7 +35,6 @@
         }
         .detail-price {
             font-size: pxToRem(18);
-            font-family: CenturyGothic;
             color: rgb(247, 101, 101);
             font-weight: bold;
             .unit {

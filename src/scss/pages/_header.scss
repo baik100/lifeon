@@ -56,7 +56,7 @@
                 height: pxToRem(14);
                 z-index: 1;
                 cursor: pointer;
-                background: url('../images/searchGlyphOnLight@2x.png')50%/cover no-repeat;
+                background: url('../images/searchGlyphOnLight@2x.png')50%/ 0.875rem 0.875rem no-repeat;
                 .onSearch & {
                     display: none;
                 }
@@ -309,7 +309,6 @@
                 width: pxToRem(94);
                 text-align: center;
                 text-transform: uppercase;
-                font-family: CenturyGothic;
                 letter-spacing: pxToRem(-0.08);
                 color: rgb(151, 151, 151);
                 &.currentPath {
@@ -462,7 +461,6 @@
     .lon-filter-title {
         font-size: pxToRem(20);
         font-weight: bolder;
-        font-family: Montserrat;
         text-align: center;
         flex-grow: 1;
         text-transform: uppercase;
