@@ -13,6 +13,7 @@ const lifeon = {
         lifeon.navActive();
         lifeon.historyBack();
         lifeon.handleFilter();
+        lifeon.isScroll();
     },
 
     onSearch : function () {
@@ -105,5 +106,17 @@ const lifeon = {
             my_range.reset();
         })
 
+    },
+
+    isScroll : function () {
+        $(window).on('scroll',function () {
+            const sct = $(window).scrollTop();
+
+            if(sct > 30) {
+                $('html, body').addClass('is-scroll')
+            }else {
+                $('html, body').removeClass('is-scroll')
+            }
+        })
     }
 };
